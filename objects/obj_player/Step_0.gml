@@ -31,3 +31,8 @@ if (x > room_width - sprite_width / 2) x = room_width - sprite_width / 2;
 if (x <= sprite_width / 2) x = sprite_width / 2;
 if (y > room_height - sprite_height / 2) y = room_height - sprite_height / 2;
 if (y < sprite_height / 2) y = sprite_height / 2;
+
+// Check for collisions with enemy
+if (place_meeting(x, y, obj_enemy)) {
+	global.gameOver = true;
+}
