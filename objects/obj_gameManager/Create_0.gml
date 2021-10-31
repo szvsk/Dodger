@@ -1,6 +1,8 @@
 // Initial spawn rate for enemies
 spawnRate = 60;
-global.record_score = 99999;
+
+load_savegame();
+
 global.gameOver = false;
 global.playerScore = 0;
 

@@ -1,4 +1,4 @@
-// Check for player input
+// Check for player input in main menu
 if (keyboard_check_released(vk_enter) && room == rm_start) {
 	room_goto(rm_game);
 }
@@ -7,6 +7,7 @@ if (keyboard_check_released(vk_escape) && room == rm_start) {
 	game_end();
 }
 
+// Check for room restart if game over
 if (keyboard_check_released(ord("r")) && room == rm_game && global.gameOver == true) {
 	room_restart();
 	global.gameOver = false;
@@ -26,6 +27,7 @@ if (global.gameOver == true) {
 	}
 	
 	if (keyboard_check_released(vk_escape)) {
+		save_savegame();
 		game_end();
 	}
 }
