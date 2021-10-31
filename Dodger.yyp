@@ -6,6 +6,7 @@
     {"id":{"name":"rm_start","path":"rooms/rm_start/rm_start.yy",},"order":1,},
     {"id":{"name":"spr_player_l","path":"sprites/spr_player_l/spr_player_l.yy",},"order":0,},
     {"id":{"name":"fnt_wacky","path":"fonts/fnt_wacky/fnt_wacky.yy",},"order":0,},
+    {"id":{"name":"scr_gameover","path":"scripts/scr_gameover/scr_gameover.yy",},"order":1,},
     {"id":{"name":"spr_title","path":"sprites/spr_title/spr_title.yy",},"order":0,},
     {"id":{"name":"spr_instuct","path":"sprites/spr_instuct/spr_instuct.yy",},"order":1,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},

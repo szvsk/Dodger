@@ -34,5 +34,5 @@ if (y < sprite_height / 2) y = sprite_height / 2;
 
 // Check for collisions with enemy
 if (place_meeting(x, y, obj_enemy)) {
-	global.gameOver = true;
+	gameover();
 }
