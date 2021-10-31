@@ -1,2 +1,12 @@
-- add saving
+- [done] add saving
 - add "new record" text to the game over screen of the new record is gained
+- add random direction for enemies
+- add screen bound bouncing for enemies
+- redraw player and enemies sprites
+- add sound
+ - for player movement
+ - for enemies bouncing
+ - for player and enemy death
+ - for menu input
+ - for gameover screen
+- add background menu and game music
