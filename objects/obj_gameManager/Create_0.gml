@@ -9,7 +9,7 @@ draw_set_color(c_white);
 draw_set_font(fnt_wacky);
 
 // Text variables
-total_score_text = "RECORD: " + string(global.record_score);
+total_score_text = "RECORD: ";
 start_text = "PRESS ENTER TO START";
 exit_text = "\nPRESS ESCAPE TO EXIT";
 game_over_a_text = "GAME OVER!\nYOUR SCORE: ";
