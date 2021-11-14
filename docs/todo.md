@@ -2,12 +2,7 @@
 - [done] add random direction for enemies
 - [done] add screen bound bouncing for enemies
     - [bug] in some cases, enemies will not bouncing off the screen edge (especially, left one)
+- [done] add sfx
+- [done] add background menu and game music
 - [todo] add "new record" text to the game over screen of the new record is gained
 - [todo] redraw player and enemies sprites
-- [todo] add sound
- - for player movement
- - for enemies bouncing
- - for player and enemy death
- - for menu input
- - for gameover screen
-- [todo] add background menu and game music
