@@ -5,6 +5,7 @@ load_savegame();
 
 global.gameOver = false;
 global.playerScore = 0;
+global.enemySpeedBoost = 0;
 
 // Font
 draw_set_color(c_white);
