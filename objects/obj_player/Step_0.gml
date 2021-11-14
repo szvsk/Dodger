@@ -34,5 +34,7 @@ if (y < sprite_height / 2) y = sprite_height / 2;
 
 // Check for collisions with enemy
 if (place_meeting(x, y, obj_enemy)) {
+	audio_play_sound(snd_hit, 1, false);
+	audio_play_sound(snd_dead, 1, false);
 	gameover();
 }

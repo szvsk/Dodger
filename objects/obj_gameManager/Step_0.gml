@@ -1,5 +1,6 @@
 // Check for player input in main menu
 if (keyboard_check_released(vk_enter) && room == rm_start) {
+	audio_stop_sound(snd_music_menu);
 	room_goto(rm_game);
 }
 
@@ -8,10 +9,11 @@ if (keyboard_check_released(vk_escape) && room == rm_start) {
 }
 
 // Check for room restart if game over
-if (keyboard_check_released(ord("r")) && room == rm_game && global.gameOver == true) {
-	room_restart();
-	global.gameOver = false;
-}
+//if (keyboard_check_released(ord("r")) && room == rm_game && global.gameOver == true) {
+//	audio_stop_sound(snd_music_ingame);
+//	room_restart();
+//	global.gameOver = false;
+//}
 
 // If Game Over
 if (global.gameOver == true) {
@@ -20,6 +22,7 @@ if (global.gameOver == true) {
 	instance_destroy(obj_player);
 	
 	if (keyboard_check_released(ord("r")) || keyboard_check_released(ord("R"))) {
+		audio_stop_sound(snd_music_ingame);
 		global.gameOver = false;
 		// Not needed now - i do not change it yet
 		// spawnRate = 60; 
