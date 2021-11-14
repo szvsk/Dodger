@@ -1,5 +1,4 @@
-Dodger - a game by Alexander Sizov <https://twitter.com/szvsk>
-==============================================================
+# Dodger - a game by [Alexander Sizov](https://twitter.com/szvsk)
 
 Made with GameMaker.
 
