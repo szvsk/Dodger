@@ -4,7 +4,7 @@ motion_set(direction, movementSpeed)
 // Check if enemy is running out the room
 if ((x - sprite_width / 2) <= 0) {
 	var d = 270 - direction;
-	direction = 540 + d; 
+	direction = 270 + d; 
 }
 
 if ((x + sprite_width / 2) >= room_width) {
