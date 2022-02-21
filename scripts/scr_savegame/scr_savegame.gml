@@ -1,5 +1,5 @@
-// Script assets have changed for v2.3.0 see
-// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+// Function save_savegame() checks if savefile already exists
+// Then save maximum score to that file
 function save_savegame(){
 	if file_exists("save.dat") {
 		var file = file_text_open_write("save.dat");
@@ -8,6 +8,10 @@ function save_savegame(){
 	}
 }
 
+// Function load_savegame() checks if savefile already exists
+// Depending of check result, stored record will be assigned to a record_score
+// Or will be created a new file with current record_score
+// (it should be 0 by default as this function called on the start of the game)
 function load_savegame(){
 	if file_exists("save.dat") {
 		var file = file_text_open_read("save.dat");
