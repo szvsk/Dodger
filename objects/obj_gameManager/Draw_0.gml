@@ -1,7 +1,7 @@
 if (room == rm_start) { // draw logo and text on title screen
 	draw_set_halign(fa_center);
 	draw_set_valign(fa_center);
-	draw_sprite(spr_title, sprite_index, room_width / 2, room_height / 2);
+	draw_sprite(spr_title, sprite_index, room_width / 2, room_height / 2 - 180);
 	draw_text(room_width / 2, room_height / 2 + 64, total_score_text + string(global.record_score));
 	draw_text(room_width / 2, 550, start_text + exit_text);
 }
